@@ -1508,6 +1508,7 @@ impl Build {
                     cmd.args.push("-m64".into());
                 }
 
+                /*
                 if target.contains("darwin") {
                     if let Some(arch) = map_darwin_target_from_rust_to_compiler_architecture(target)
                     {
@@ -1515,6 +1516,7 @@ impl Build {
                         cmd.args.push(arch.into());
                     }
                 }
+                */
 
                 if self.static_flag.is_none() {
                     let features = self
